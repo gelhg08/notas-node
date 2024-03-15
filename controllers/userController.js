@@ -16,7 +16,7 @@ const notasController = {
   getNotasById: async (req, res) => {
     const id = req.params.id;
     try {
-      const NotasId = await Notas.findById(id);
+      const notasId = await Notas.findById(id);
       res.json(notasId);
     } catch (error) {
       console.error("Error al obtener usuarios:", error);

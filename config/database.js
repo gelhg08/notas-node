@@ -42,4 +42,4 @@ const inicializeData = async () => {
     }
 }
 
-module.exports = connectDatabase();
+module.exports = connectDatabase;
