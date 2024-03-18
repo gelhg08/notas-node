@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <form action="http://localhost:3001/api/v1/notas" method="post">
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" />
+      </div>
+      <div class="form-group">
+        <label for="apellido">Apellido</label>
+        <input type="text" class="form-control" id="apellido" name="apellido" />
+      </div>
+      <div class="form-group">
+        <label for="nota1">Nota 1</label>
+        <input type="number" class="form-control" id="nota1" name="nota1" />
+      </div>
+      <div class="form-group">
+        <label for="nota2">Nota 2</label>
+        <input type="number" class="form-control" id="nota2" name="nota2" />
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
