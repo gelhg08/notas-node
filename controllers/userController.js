@@ -4,7 +4,7 @@ const Notas = require('../models/userModel');
 const notasController = {
   getAllNotas: async (req, res) => {
     try {
-      const notas = await Notas.findById();
+      const notas = await Notas.find();
       res.json(notas);
     } catch (error) {
       console.error("Error al obtener las notas:", error);
